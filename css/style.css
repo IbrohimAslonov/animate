@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #021823;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+}
+.parent {
+  position: relative;
+  overflow: hidden;
+  /* background-color: yellow; */
+}
+
+img {
+  position: relative;
+  top: 50px;
+  width: 300px;
+  height: 300px;
+  animation: image 3s forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: image;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.anim {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+@keyframes image {
+  0% {
+    margin-top: -200px;
+  }
+  50% {
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+  }
+  100% {
+    margin-top: 0px;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+span {
+  position: relative;
+  /* top: -100px; */
+  color: #fff;
+  font-size: 70px;
+  /* display: inline-block; */
+  /* margin-top: -550px; */
+}
+
+span:nth-child(12) {
+  animation-delay: 2s;
+}
+
+span:nth-child(11) {
+  animation-delay: 2.1s;
+}
+span:nth-child(10) {
+  animation-delay: 2.2s;
+}
+span:nth-child(9) {
+  animation-delay: 2.3s;
+}
+span:nth-child(8) {
+  animation-delay: 2.4s;
+}
+span:nth-child(7) {
+  animation-delay: 2.5s;
+}
+span:nth-child(5) {
+  animation-delay: 2.5s;
+}
+span:nth-child(4) {
+  animation-delay: 2.4s;
+}
+span:nth-child(3) {
+  animation-delay: 2.3s;
+}
+span:nth-child(2) {
+  animation-delay: 2.2s;
+}
+span:nth-child(1) {
+  animation-delay: 2.1s;
+}
+
+span {
+  margin-top: -200px;
+  animation: text 0.5s linear 0s forwards;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: text;
+}
+.anim {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: normal;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  overflow: hidden;
+}
+@keyframes text {
+  0% {
+    margin-top: -200px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+/* .audio {
+  display: inline-block;
+  height: 20px;
+  width: 100%;
+  position: re;
+  top: 550px;
+  left: 620px;
+  border: 3px solid rgb(0, 218, 116);
+  border-radius: 35px;
+} */
+/* #loading {
+	position: fixed;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	z-index: 100;
+	transition: 0.5s;
+}
+
+.loading-none {
+  opacity: 0;
+  z-index: -1;
+} */
